@@ -191,11 +191,11 @@ article{
         vertical-align:top;
         width:300px;
         border: $bordes;
-        @media (max-width: 575px){
-            width: 220px;
-            height: 220px;
+           @media (max-width: 575px){
+               width: 220px;
+               height: 220px;
+            }
         }
-     }
         .productoImagen{
         width:300px;
         height:300px;
