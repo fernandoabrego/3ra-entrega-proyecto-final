@@ -189,18 +189,11 @@ article{
         vertical-align:top;
         width:300px;
         border: $bordes;
-<<<<<<< HEAD
-        @media (max-width: 575px){
-            width: 220px;
-            height: 220px;
-=======
-           @media (max-width: 575px){
-               width: 220px;
-               height: 220px;
+            @media (max-width: 575px){
+                width: 220px;
+                height: 220px;
             }
->>>>>>> 07c3e2808ae27b0d1c7e8dc01ceb95102f3ef246
-        }
-        }
+        }    
         .productoImagen{
         width:300px;
         height:300px;
