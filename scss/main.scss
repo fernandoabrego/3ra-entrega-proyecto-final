@@ -130,8 +130,6 @@ article{
     }
 }
 .formulario{
-    margin-left: 25vw;
-    margin-right: 20vw;
     h3{
         font-size: 3.5vh;
     }
@@ -191,10 +189,10 @@ article{
         vertical-align:top;
         width:300px;
         border: $bordes;
-        }
         @media (max-width: 575px){
             width: 220px;
             height: 220px;
+        }
         }
         .productoImagen{
         width:300px;
