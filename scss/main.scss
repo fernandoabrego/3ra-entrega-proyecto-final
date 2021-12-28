@@ -86,9 +86,25 @@ body{
         font-size: $size-titulos;
         background-color: $color-principal;
     }
+    .carousel-indicators [data-bs-target] {
+        height: 30px;
+        width: 30px;
+        background-color: $color-principal;
+    }
     .carrusel{
-        img{
-            height: 95vh;
+        height: 80vh;
+        width: fit-content;
+        .carousel-caption{
+            & :hover{
+                color: $color-principal;
+            }
+            p{
+                font-size: $size-contenido-secciones;
+            }
+        }
+        .carrusel__imagen{
+            height: 80vh;
+            width: fit-content;
             @media(max-width:575px){
             height: 80vh;
             width: 100%;
@@ -167,6 +183,9 @@ article{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    @media (max-width: 500px){
+                background-position-x: 60%;
+    }
     .cuerpo__Titulo{
         font-size: $size-titulos;
         background-color: $color-principal;

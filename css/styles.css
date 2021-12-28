@@ -90,11 +90,27 @@ body {
   font-size: 5vh;
   background-color: #ffe0e6;
 }
-.cuerpoIndex .carrusel img {
-  height: 95vh;
+.cuerpoIndex .carousel-indicators [data-bs-target] {
+  height: 30px;
+  width: 30px;
+  background-color: #ffe0e6;
+}
+.cuerpoIndex .carrusel {
+  height: 80vh;
+  width: fit-content;
+}
+.cuerpoIndex .carrusel .carousel-caption :hover {
+  color: #ffe0e6;
+}
+.cuerpoIndex .carrusel .carousel-caption p {
+  font-size: 3vh;
+}
+.cuerpoIndex .carrusel .carrusel__imagen {
+  height: 80vh;
+  width: fit-content;
 }
 @media (max-width: 575px) {
-  .cuerpoIndex .carrusel img {
+  .cuerpoIndex .carrusel .carrusel__imagen {
     height: 80vh;
     width: 100%;
   }
@@ -172,6 +188,11 @@ article .promocion__link:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 500px) {
+  .cuerpo {
+    background-position-x: 60%;
+  }
 }
 .cuerpo .cuerpo__Titulo {
   font-size: 5vh;
