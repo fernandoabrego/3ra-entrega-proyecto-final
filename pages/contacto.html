@@ -87,68 +87,104 @@
     </ul>
     <div class="container-fluid">
       <div class="row">
-        <iframe class="col-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6140626190463!2d-58.466779621727845!3d-34.5633258350865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67e462b4275%3A0x602d042e24d23721!2sBlanco%20Encalada%203179%2C%20C1428DEA%20CABA!5e0!3m2!1ses-419!2sar!4v1636045178392!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="col-10 col-sm-6 col-md-3"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6140626190463!2d-58.466779621727845!3d-34.5633258350865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67e462b4275%3A0x602d042e24d23721!2sBlanco%20Encalada%203179%2C%20C1428DEA%20CABA!5e0!3m2!1ses-419!2sar!4v1636045178392!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
     <hr>
     <section>
-      <div class="formulario ">
-      <form class="mx-5">
-        <fieldset>
-        <legend class="py-4">
-          <h3>Accedé a increíbles beneficios</h3>
-          <h3>Suscribite para un 15% de descuento en tu próxima compra!</h3>
-        </legend>
-        <div class="row mb-3">
-          <label for="nombre" class="col-5 col-sm-2 col-form-label">Nombre:</label>
-          <div class="col-7">
-            <input type="text" class="form-control" id="nombre">
+      <div class="container-fluid">
+        <div class="row justify-content-center p-5">
+          <div class="col-12 col-sm-6 col-md-3">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Escribe tu nombre" required>
+                <label for="formGroupExampleInput" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="Apellido" placeholder="Escribe tu apellido" required>
+                <label for="exampleInputEmail1">Mail</label>
+                <input type="email" class="form-control" id="Mail" aria-describedby="emailHelp" placeholder="Escribe tu mail" required>
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos con nadie</small>
+                <div class="form-check">
+                  <legend>Sexo:</legend>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Mujer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Hombre
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
           </div>
         </div>
-        <div class="row mb-3">
-          <label for="apellido" class="col-5 col-sm-2 col-form-label">Apellido:</label>
-          <div class="col-7">
-            <input type="text" class="form-control" id="apellido">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <label for="mail" class="col-5 col-sm-2 col-form-label">Mail:</label>
-          <div class="col-7">
-            <input type="email" class="form-control" id="mail">
-          </div>
-        </div>
-        <fieldset class="row mb-3">
-          <legend class="col-form-label col-5 col-sm-2 pt-0">Sexo:</legend>
-          <div class="col-2  mx-4">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="mujer" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Mujer
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="hombre">
-              <label class="form-check-label" for="gridRadios2">
-                Hombre
-              </label>
-            </div>
-          </div>
-        </fieldset>
-        <div class="row mb-3">
-          <div class="col-10 mx-4 offset-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Acepto términos y condiciones.
-              </label>
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary mb-4">Enviar</button>
-      </fieldset>
-      </form>
-    </div>
+      </div>
+
     </section>
+    <!-- <div class="formulario ">
+    <form class="mx-5">
+      <fieldset>
+      <legend class="py-4">
+        <h3>Accedé a increíbles beneficios</h3>
+        <h3>Suscribite para un 15% de descuento en tu próxima compra!</h3>
+      </legend>
+      <div class="row mb-3">
+        <label for="nombre" class="col-5 col-sm-2 col-form-label">Nombre:</label>
+        <div class="col-7">
+          <input type="text" class="form-control" id="nombre">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="apellido" class="col-5 col-sm-2 col-form-label">Apellido:</label>
+        <div class="col-7">
+          <input type="text" class="form-control" id="apellido">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="mail" class="col-5 col-sm-2 col-form-label">Mail:</label>
+        <div class="col-7">
+          <input type="email" class="form-control" id="mail">
+        </div>
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-5 col-sm-2 pt-0">Sexo:</legend>
+        <div class="col-2  mx-4">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="mujer" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Mujer
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="hombre">
+            <label class="form-check-label" for="gridRadios2">
+              Hombre
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="row mb-3">
+        <div class="col-10 mx-4 offset-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Acepto términos y condiciones.
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mb-4">Enviar</button>
+    </fieldset>
+    </form>
+  </div> -->
   </main>
   <hr>
   <div class="container-fluid">

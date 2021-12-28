@@ -162,7 +162,6 @@ article{
 }
 .footer{
     background-color: $color-principal;
-    height: 25vh;
     color: map-get($map: $newfont, $key:color );
     li{
         font-size: 2.7vh;
