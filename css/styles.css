@@ -88,7 +88,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 120vh;
 }
 .cuerpoIndex .cuerpoIndex__titulo {
   font-size: 5vh;
@@ -111,9 +110,6 @@ body {
 }
 .cuerpoIndex .carrusel .carousel-caption :hover {
   color: #ffe0e6;
-}
-.cuerpoIndex .carrusel .carousel-caption p {
-  font-size: 3vh;
 }
 .cuerpoIndex .carrusel .carrusel__imagen {
   height: 80vh;
