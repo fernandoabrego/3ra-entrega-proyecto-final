@@ -1,4 +1,4 @@
-# Sass-seo
+# 3ra entrega proyecto final
 Link al repositorio: https://fernandoabrego.github.io/Sass-seo/
 Cambios SEO: Se agregaron las siguientes características a todas las páginas.
 Descripción: META DESCRIPTION. Se agregó descripción acorde a cada página dentro del sitio.
