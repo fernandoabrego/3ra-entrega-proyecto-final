@@ -3,7 +3,7 @@ $bordes: .5em solid rgb(180,210,240);
 //llamado de variables
 @import "colores";
 @import "tipografias";
-@import "cambios";
+@import "bordes";
 //Estilos
 *{
     margin: 0 !important;
@@ -25,7 +25,10 @@ body{
 .colorSecundario{
     background-color: $color-secundario;
 }
-//header
+.bordes{
+    border: $bordes;
+}
+//header y animación
 @keyframes welcome{
         0%{
         background: linear-gradient(90deg, rgba(180,210,240,1) 0%, rgba(255,224,230,1) 58%);
@@ -75,13 +78,12 @@ body{
             }
     }
 }
-//main
+//main index
 .cuerpoIndex{
     background-image: url(../images/bebeoso.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    height: 120vh;
     .cuerpoIndex__titulo{
         font-size: $size-titulos;
         background-color: $color-principal;
@@ -94,6 +96,10 @@ body{
     .carrusel{
         height: 80vh;
         width: fit-content;
+        @media (max-width: 575px) {
+            height: 250px;
+            width: 250px;
+        }
         .carousel-caption{
             & :hover{
                 color: $color-principal;
@@ -106,84 +112,36 @@ body{
             height: 80vh;
             width: fit-content;
             @media(max-width:575px){
-            height: 80vh;
-            width: 100%;
-            }
+                height: 250px;
+                width: 250px;
             }
         }
     }
-.contenedor__Principal{
-    line-height: 2;
-    h3{
-        font-size: $size-titulos;
-    }
-    div{
-        h4{
-            font-size: 3.5vh;
-        }
-        p{
-            font-size: $size-contenido-secciones;
-        }
-    }
 }
-.bordes{
-    border: $bordes;
-}
-//article, section & footer
-article{
-    background-color: $color-secundario;
-    h3{
-        font-size: $size-titulos;
-    }
-    p{
-        font-size: 2.8vh;
-    }
-    .promocion__link{
-        color:$color-detalles;
-            &:hover{
-                color:$color-principal;
-            }
-    }
-}
-.formulario{
-    h3{
-        font-size: 3.5vh;
-    }
-}
-.seccion{
-    background-color:$color-principal;
-    h3{
-        font-size: $size-titulos;
-    }
-    div ul li{
-        font-size: $size-contenido-secciones;
-        line-height: 2;
-    }
-}
-.footer{
-    background-color: $color-principal;
-    color: map-get($map: $newfont, $key:color );
-    li{
-        font-size: 2.7vh;
-        line-height: 1.2;
-    }
-    .footer__whatsapp{
-        position: fixed;
-        bottom: 5vh;
-        right: 5vw;
-    }
-}
-.footer__ColorSecundario{
-    @extend .footer;
-    background-color:rgb(180,210,240);
-}
+//main páginas
 .cuerpo{
     background-image: url(../images/bebe2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     @media (max-width: 500px){
-                background-position-x: 60%;
+        background-position-x: 60%;
+    }
+    .contenedor__Principal{
+        //separamos y ponemos transparencia para hacer más legible la vista de mobile
+        line-height: 2; 
+        background-color: rgba(255,255,255,0.5);
+        h3{
+            font-size: $size-titulos;
+        }
+        div{
+            h4{
+                font-size: 3.5vh;
+            }
+            p{
+                font-size: $size-contenido-secciones;
+            }
+        }
     }
     .cuerpo__Titulo{
         font-size: $size-titulos;
@@ -211,7 +169,7 @@ article{
                 width: 220px;
                 height: 220px;
             }
-        }    
+        }   
         .productoImagen{
         width:300px;
         height:300px;
@@ -221,4 +179,51 @@ article{
             }
         }
     }
+}
+//article, section & footer
+article{
+    background-color: $color-secundario;
+    h3{
+        font-size: $size-titulos;
+    }
+    p{
+        font-size: 2.8vh;
+    }
+    .promocion__link{
+        color:$color-detalles;
+            &:hover{
+                color:$color-principal;
+            }
+    }
+}
+.seccion{
+    background-color:$color-principal;
+    h3{
+        font-size: $size-titulos;
+    }
+    div ul li{
+        font-size: $size-contenido-secciones;
+        line-height: 2;
+    }
+}
+.footer{
+    background-color: $color-principal;
+    color: map-get($map: $newfont, $key:color );
+    li{
+        font-size: 2.7vh;
+        line-height: 1.2;
+    }
+    .footer__whatsapp{
+        position: fixed;
+        bottom: 5vh;
+        right: 5vw;
+    }
+}
+.footer__Index{
+    @extend .footer;
+    background-color:$color-secundario;
+}
+form{
+        box-shadow: 0 0 10px 0;
+        border-radius: 10px;
 }

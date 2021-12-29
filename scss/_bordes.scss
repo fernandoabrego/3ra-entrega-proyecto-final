@@ -1,0 +1,13 @@
+//maps
+$newfont: (
+    color:black
+);
+
+//mixins
+@mixin bordes{
+    border: 4px solid white;
+    border-radius: 4px;
+}
+.cabeceraGeneral__links, article{
+    @include bordes()
+}

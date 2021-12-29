@@ -1,6 +1,6 @@
-.footer, .footer__ColorSecundario {
-  border: 3px solid gray;
-  border-radius: 2px;
+.cabeceraGeneral__links, article {
+  border: 4px solid white;
+  border-radius: 4px;
 }
 
 * {
@@ -27,6 +27,10 @@ body {
 
 .colorSecundario {
   background-color: #b4d2f0;
+}
+
+.bordes {
+  border: 0.5em solid #b4d2f0;
 }
 
 @keyframes welcome {
@@ -84,7 +88,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 120vh;
 }
 .cuerpoIndex .cuerpoIndex__titulo {
   font-size: 5vh;
@@ -99,6 +102,12 @@ body {
   height: 80vh;
   width: fit-content;
 }
+@media (max-width: 575px) {
+  .cuerpoIndex .carrusel {
+    height: 250px;
+    width: 250px;
+  }
+}
 .cuerpoIndex .carrusel .carousel-caption :hover {
   color: #ffe0e6;
 }
@@ -111,75 +120,9 @@ body {
 }
 @media (max-width: 575px) {
   .cuerpoIndex .carrusel .carrusel__imagen {
-    height: 80vh;
-    width: 100%;
+    height: 250px;
+    width: 250px;
   }
-}
-
-.contenedor__Principal {
-  line-height: 2;
-}
-.contenedor__Principal h3 {
-  font-size: 5vh;
-}
-.contenedor__Principal div h4 {
-  font-size: 3.5vh;
-}
-.contenedor__Principal div p {
-  font-size: 3vh;
-}
-
-.bordes {
-  border: 0.5em solid #b4d2f0;
-}
-
-article {
-  background-color: #b4d2f0;
-}
-article h3 {
-  font-size: 5vh;
-}
-article p {
-  font-size: 2.8vh;
-}
-article .promocion__link {
-  color: #5e5e5e;
-}
-article .promocion__link:hover {
-  color: #ffe0e6;
-}
-
-.formulario h3 {
-  font-size: 3.5vh;
-}
-
-.seccion {
-  background-color: #ffe0e6;
-}
-.seccion h3 {
-  font-size: 5vh;
-}
-.seccion div ul li {
-  font-size: 3vh;
-  line-height: 2;
-}
-
-.footer, .footer__ColorSecundario {
-  background-color: #ffe0e6;
-  color: black;
-}
-.footer li, .footer__ColorSecundario li {
-  font-size: 2.7vh;
-  line-height: 1.2;
-}
-.footer .footer__whatsapp, .footer__ColorSecundario .footer__whatsapp {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vw;
-}
-
-.footer__ColorSecundario {
-  background-color: #b4d2f0;
 }
 
 .cuerpo {
@@ -192,6 +135,19 @@ article .promocion__link:hover {
   .cuerpo {
     background-position-x: 60%;
   }
+}
+.cuerpo .contenedor__Principal {
+  line-height: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.cuerpo .contenedor__Principal h3 {
+  font-size: 5vh;
+}
+.cuerpo .contenedor__Principal div h4 {
+  font-size: 3.5vh;
+}
+.cuerpo .contenedor__Principal div p {
+  font-size: 3vh;
 }
 .cuerpo .cuerpo__Titulo {
   font-size: 5vh;
@@ -232,6 +188,56 @@ article .promocion__link:hover {
     width: 220px;
     height: 220px;
   }
+}
+
+article {
+  background-color: #b4d2f0;
+}
+article h3 {
+  font-size: 5vh;
+}
+article p {
+  font-size: 2.8vh;
+}
+article .promocion__link {
+  color: #5e5e5e;
+}
+article .promocion__link:hover {
+  color: #ffe0e6;
+}
+
+.seccion {
+  background-color: #ffe0e6;
+}
+.seccion h3 {
+  font-size: 5vh;
+}
+.seccion div ul li {
+  font-size: 3vh;
+  line-height: 2;
+}
+
+.footer, .footer__Index {
+  background-color: #ffe0e6;
+  color: black;
+}
+.footer li, .footer__Index li {
+  font-size: 2.7vh;
+  line-height: 1.2;
+}
+.footer .footer__whatsapp, .footer__Index .footer__whatsapp {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.footer__Index {
+  background-color: #b4d2f0;
+}
+
+form {
+  box-shadow: 0 0 10px 0;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
