@@ -88,6 +88,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 120vh;
 }
 .cuerpoIndex .cuerpoIndex__titulo {
   font-size: 5vh;
