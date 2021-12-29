@@ -217,22 +217,18 @@ article .promocion__link:hover {
   line-height: 2;
 }
 
-.footer, .footer__Index {
+.footer {
   background-color: #ffe0e6;
   color: black;
 }
-.footer li, .footer__Index li {
+.footer li {
   font-size: 2.7vh;
   line-height: 1.2;
 }
-.footer .footer__whatsapp, .footer__Index .footer__whatsapp {
+.footer .footer__whatsapp {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
-}
-
-.footer__Index {
-  background-color: #b4d2f0;
 }
 
 form {
