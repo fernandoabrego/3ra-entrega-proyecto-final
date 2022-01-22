@@ -66,6 +66,10 @@ body {
 .cabeceraGeneral h2 {
   font-size: 4vh;
 }
+.cabeceraGeneral .iconos :hover {
+  width: 30px;
+  height: 30px;
+}
 .cabeceraGeneral .cabeceraGeneral__links {
   background-color: #b4d2f0;
 }
@@ -99,8 +103,8 @@ body {
   background-color: #ffe0e6;
 }
 .cuerpoIndex .carrusel {
-  height: 80vh;
-  width: fit-content;
+  height: 500px;
+  width: 500px;
 }
 @media (max-width: 575px) {
   .cuerpoIndex .carrusel {
@@ -112,8 +116,8 @@ body {
   color: #ffe0e6;
 }
 .cuerpoIndex .carrusel .carrusel__imagen {
-  height: 80vh;
-  width: fit-content;
+  height: 500px;
+  width: 500px;
 }
 @media (max-width: 575px) {
   .cuerpoIndex .carrusel .carrusel__imagen {
@@ -126,9 +130,15 @@ body {
   background-image: url(../images/bebe2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position-y: center;
+  background-position-x: 85%;
 }
-@media (max-width: 500px) {
+@media (max-width: 1152px) {
+  .cuerpo {
+    background-position-x: 55%;
+  }
+}
+@media (max-width: 575px) {
   .cuerpo {
     background-position-x: 60%;
   }
@@ -138,6 +148,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .cuerpo .contenedor__Principal h3 {
+  text-decoration: underline;
   font-size: 5vh;
 }
 .cuerpo .contenedor__Principal div h4 {
@@ -148,6 +159,16 @@ body {
 }
 .cuerpo .cuerpo__Titulo {
   font-size: 5vh;
+  background-color: #ffe0e6;
+}
+.cuerpo .acordeon {
+  font-size: 3vh;
+  background-color: transparent;
+}
+.cuerpo .acordeon .acordeon__titulo {
+  font-size: 5vh;
+  color: #5e5e5e;
+  height: 8vh;
   background-color: #ffe0e6;
 }
 .cuerpo .nuestraInfo__lista {
@@ -167,7 +188,7 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 300px;
+  width: 400px;
   border: 0.5em solid #b4d2f0;
 }
 @media (max-width: 575px) {
@@ -177,8 +198,8 @@ body {
   }
 }
 .cuerpo .tarjeta__Productos .productoImagen {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 @media (max-width: 575px) {
   .cuerpo .tarjeta__Productos .productoImagen {
