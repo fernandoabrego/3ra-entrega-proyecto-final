@@ -207,6 +207,9 @@ body {
     height: 220px;
   }
 }
+.cuerpo .tarjeta__Productos .tarjeta__descripcion {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 article {
   background-color: #b4d2f0;
