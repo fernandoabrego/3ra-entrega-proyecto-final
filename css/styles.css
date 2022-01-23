@@ -112,6 +112,9 @@ body {
     width: 250px;
   }
 }
+.cuerpoIndex .carrusel .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .cuerpoIndex .carrusel .carousel-caption :hover {
   color: #ffe0e6;
 }
@@ -163,7 +166,7 @@ body {
 }
 .cuerpo .acordeon {
   font-size: 3vh;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .cuerpo .acordeon .acordeon__titulo {
   font-size: 5vh;
