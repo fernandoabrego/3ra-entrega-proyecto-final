@@ -70,6 +70,12 @@ body {
   width: 30px;
   height: 30px;
 }
+.cabeceraGeneral .navegador {
+  height: 8vh;
+  border-width: 3px;
+  border-radius: 8px;
+  border-color: #b4d2f0;
+}
 .cabeceraGeneral .cabeceraGeneral__links {
   background-color: #b4d2f0;
 }

@@ -67,6 +67,12 @@ body{
             height: 30px;
         }
     }
+    .navegador{
+        height: 8vh;
+        border-width: 3px;
+        border-radius: 8px;
+        border-color: $color-secundario;
+    }
     .cabeceraGeneral__links{
         background-color: $color-secundario;
         .cabeceraGeneral__links__search{
